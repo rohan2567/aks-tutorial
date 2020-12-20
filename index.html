@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AKS</title>
+
+	<meta name=”viewport” content=”width=device-width,  initial-scale=1, user-scalable=yes″>
+<meta name="description" content="The Curriculum Vitae of Joe Bloggs."/>
+<meta charset="UTF-8"> 
+
+</head>
+<style>
+
+	
+@viewport
+  {
+    width:extend-to-zoom;
+    zoom:1.0;
+  }
+@-ms-viewport
+  {
+     width:extend-to-zoom;
+    zoom:1.0;
+  }
+	
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    border:0;
+    font:inherit;
+    font-size:100%;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    }
+    
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block;
+    }
+    
+    html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+    
+    .clear {clear: both;}
+    
+    p {
+        font-size: 1em;
+        line-height: 1.4em;
+        margin-bottom: 20px;
+        color: #444;
+    }
+    
+    #cv {
+        width: 90%;
+        max-width: 800px;
+        background: #f3f3f3;
+        margin: 30px auto;
+    }
+    
+    .mainDetails {
+        padding: 25px 35px;
+        border-bottom: 2px solid #cf8a05;
+        background: #ededed;
+    }
+    
+    #name h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        margin-bottom: -6px;
+    }
+    
+    #name h2 {
+        font-size: 2em;
+        margin-left: 2px;
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    }
+    
+    #mainArea {
+        padding: 0 40px;
+    }
+    
+    #headshot {
+        width: 12.5%;
+        float: left;
+        margin-right: 30px;
+    }
+    
+    #headshot img {
+        width: 100%;
+        height: auto;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+    }
+    
+    #name {
+        float: left;
+    }
+    
+    #contactDetails {
+        float: right;
+    }
+    
+    #contactDetails ul {
+        list-style-type: none;
+        font-size: 0.9em;
+        margin-top: 2px;
+    }
+    
+    #contactDetails ul li {
+        margin-bottom: 3px;
+        color: #444;
+    }
+    
+    #contactDetails ul li a, a[href^=tel] {
+        color: #444; 
+        text-decoration: none;
+        -webkit-transition: all .3s ease-in;
+        -moz-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        -ms-transition: all .3s ease-in;
+        transition: all .3s ease-in;
+    }
+    
+    #contactDetails ul li a:hover { 
+        color: #cf8a05;
+    }
+    
+    
+    section {
+        border-top: 1px solid #dedede;
+        padding: 20px 0 0;
+    }
+    
+    section:first-child {
+        border-top: 0;
+    }
+    
+    section:last-child {
+        padding: 20px 0 10px;
+    }
+    
+    .sectionTitle {
+        float: left;
+        width: 25%;
+    }
+    
+    .sectionContent {
+        float: right;
+        width: 72.5%;
+    }
+    
+    .sectionTitle h1 {
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 1.5em;
+        color: #cf8a05;
+    }
+    
+    .sectionContent h2 {
+        font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+        font-size: 1.5em;
+        margin-bottom: -2px;
+    }
+    
+    .subDetails {
+        font-size: 0.8em;
+        font-style: italic;
+        margin-bottom: 3px;
+    }
+    
+    .keySkills {
+        list-style-type: none;
+        -moz-column-count:3;
+        -webkit-column-count:3;
+        column-count:3;
+        margin-bottom: 20px;
+        font-size: 1em;
+        color: #444;
+    }
+    
+    .keySkills ul li {
+        margin-bottom: 3px;
+    }
+    
+    @media all and (min-width: 602px) and (max-width: 800px) {
+        #headshot {
+            display: none;
+        }
+        
+        .keySkills {
+        -moz-column-count:2;
+        -webkit-column-count:2;
+        column-count:2;
+        }
+    }
+    
+    @media all and (max-width: 601px) {
+        #cv {
+            width: 95%;
+            margin: 10px auto;
+            min-width: 280px;
+        }
+        
+        #headshot {
+            display: none;
+        }
+        
+        #name, #contactDetails {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .sectionTitle, .sectionContent {
+            float: none;
+            width: 100%;
+        }
+        
+        .sectionTitle {
+            margin-left: -2px;
+            font-size: 1.25em;
+        }
+        
+        .keySkills {
+            -moz-column-count:2;
+            -webkit-column-count:2;
+            column-count:2;
+        }
+    }
+    
+    @media all and (max-width: 480px) {
+        .mainDetails {
+            padding: 15px 15px;
+        }
+        
+        section {
+            padding: 15px 0 0;
+        }
+        
+        #mainArea {
+            padding: 0 25px;
+        }
+    
+        
+        .keySkills {
+        -moz-column-count:1;
+        -webkit-column-count:1;
+        column-count:1;
+        }
+        
+        #name h1 {
+            line-height: .8em;
+            margin-bottom: 4px;
+        }
+    }
+    
+    @media print {
+        #cv {
+            width: 100%;
+        }
+    }
+    
+    @-webkit-keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @-webkit-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @-moz-keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @-moz-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes reset {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .instaFade {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-timing-function: ease-in;
+        
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 1.5s;
+        -moz-animation-timing-function: ease-in;
+        
+        animation-name: reset, fade-in;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-in;
+    }
+    
+    .quickFade {
+        -webkit-animation-name: reset, fade-in;
+        -webkit-animation-duration: 2.5s;
+        -webkit-animation-timing-function: ease-in;
+        
+        -moz-animation-name: reset, fade-in;
+        -moz-animation-duration: 2.5s;
+        -moz-animation-timing-function: ease-in;
+        
+        animation-name: reset, fade-in;
+        animation-duration: 2.5s;
+        animation-timing-function: ease-in;
+    }
+     
+    .delayOne {
+        -webkit-animation-delay: 0, .5s;
+        -moz-animation-delay: 0, .5s;
+        animation-delay: 0, .5s;
+    }
+    
+    .delayTwo {
+        -webkit-animation-delay: 0, 1s;
+        -moz-animation-delay: 0, 1s;
+        animation-delay: 0, 1s;
+    }
+    
+    .delayThree {
+        -webkit-animation-delay: 0, 1.5s;
+        -moz-animation-delay: 0, 1.5s;
+        animation-delay: 0, 1.5s;
+    }
+    
+    .delayFour {
+        -webkit-animation-delay: 0, 2s;
+        -moz-animation-delay: 0, 2s;
+        animation-delay: 0, 2s;
+    }
+    
+    .delayFive {
+        -webkit-animation-delay: 0, 2.5s;
+        -moz-animation-delay: 0, 2.5s;
+        animation-delay: 0, 2.5s;
+	}
+	
+
+    .headings
+    {
+        font-size: xx-large;
+    }
+    .mini-headings
+    {
+        font-size: x-large;
+        font-style: oblique;
+        color:darkgoldenrod
+    }
+
+
+
+
+
+
+</style>
+
+
+
+
+
+<body id="top">
+
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="data:image/png;base64,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">
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">AKS</h1>
+			<!-- <h2 class="quickFade delayThree">DevOps</h2> -->
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+                <li>What is AKS</li>
+                <li>What is AKS</li>
+                
+				
+
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+
+
+
+
+
+	    <div id="mainArea" class="quickFade delayFive">
+		    
+            <p>
+                <center>
+                    <h1 class="headings">
+                        What is AKS ?
+                    </h1>
+                </center> <br>
+               
+            </p> <hr>
+
+
+            <p>
+                <center>
+                    <h1 class="headings">
+                        Architecture
+                    </h1>
+                </center> <br>
+                
+            </p> <hr>
+
+
+
+
+
+	    </div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3753241-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
+
